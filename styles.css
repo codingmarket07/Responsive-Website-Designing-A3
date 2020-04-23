@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-
 *{
 	margin: 0;
 	padding: 0;
@@ -10,81 +9,71 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4{
+p{
+	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 22px;
+	color: #8D8D8D;
+}
+
+img{
+	display: block;
+	width: 100%;
+}
+
+.primary_text{
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #5B5B5B;
 	margin-bottom: 25px;
 	text-align: center;
 }
 
-h1{
-	font-size: 46px;
-	text-transform: capitalize;
-}
-
-h2{
+.subprimary_text{
 	font-size: 32px;
 	text-transform: capitalize;
+	margin-bottom: 25px;
+	text-align: center;
 }
 
-h3{
+.secondary_text{
 	font-size: 24px;
 	text-transform: uppercase;
 	color: #262626;
-}
-
-h4{
-	font-size: 16px;
-	text-transform: uppercase;
-	color: #5B5B5B;
-}
-
-p{
-	margin-bottom: 15px;
-	font-size: 14px;
-	line-height: 20px;
-	color: #8D8D8D;
-}
-
-.btn_green a{
-	display: block;
-    margin: 35px auto 0;
-    border-radius: 50px;
-	background: #81C645;
-	color: #fff;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 25px;
 	text-align: center;
-	text-transform: capitalize;
 }
 
-.btn_green.btn_lg a{
-	width: 200px;
-	padding: 15px;
-}
-
-.btn_green.btn_sm a{
-	width: 160px;
-	padding: 12px;
-}
-
+.btn_green a,
 .btn_white a{
 	display: block;
     margin: 35px auto 0;
     border-radius: 50px;
 	text-align: center;
 	text-transform: capitalize;
+	width: 180px;
+	padding: 12px 15px;
+}
+
+.btn_green a{
+	background: #81C645;
+	color: #fff;
+}
+
+.btn_white a{
 	background: #fff;
 	color: #81C645;
 }
 
-.btn_white.btn_lg a{
-	width: 200px;
-	padding: 15px;
+.btn_green a:hover {
+    background: #7ae31e;
 }
 
-.btn_white.btn_sm a{
-	width: 160px;
-	padding: 12px;
+.btn_white a:hover{
+	background: #f5f5f5;
 }
 
 .center{
@@ -107,13 +96,19 @@ p{
 	position: relative;
 }
 
+.header_content .title{
+	margin-bottom: 25px;
+	font-size: 46px;
+	text-transform: capitalize;
+}
+
 .header_content,
 .header_content p{
 	text-align: center;
 	color: #fff;	
 }
 
-.header_content h1 span{
+.header_content .title span{
 	color: #81C645;
 }
 
@@ -331,6 +326,10 @@ p{
 	cursor: pointer;
 }
 
+.social_media .icons:hover{
+	background: #7ae31e;
+}
+
 /* Hamburger */
 .hamburger{
 	position: absolute;
@@ -343,6 +342,10 @@ p{
 	border-radius: 50%;
 	cursor: pointer;
 	font-size: 18px;
+}
+
+.hamburger:hover{
+	background: #7ae31e;
 }
 
 .navbar{
@@ -366,6 +369,11 @@ p{
 	text-transform: uppercase;
 	font-size: 14px;
 	letter-spacing: 2px;
+	user-select: none;
+}
+
+.navbar ul li a:hover{
+	color: #f5f5f5;
 }
 
 @media screen and (max-width: 768px){
